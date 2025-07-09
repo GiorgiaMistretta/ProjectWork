@@ -1,0 +1,124 @@
+/*---------------------------------------------------------------
+  RESET DI BASE
+  Annulla margini e padding di default e imposta box-sizing
+  uniforme in tutti i browser.
+----------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------------------------------
+  STILI GENERALI
+  Font serif per un tocco elegante, sfondo chiaro e testo scuro.
+----------------------------------------------------------------*/
+body {
+  font-family: Georgia, serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/*---------------------------------------------------------------
+  HERO HEADER
+  Sezione introduttiva con immagine di sfondo scura e testo bianco.
+----------------------------------------------------------------*/
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('images/caudalie-hero.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Titolo principale nella hero */
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+/* Sottotitolo nella hero */
+.hero p {
+  font-size: 1.2em;
+}
+
+/*---------------------------------------------------------------
+  SEZIONE DOWNLOAD
+  Centra il contenuto e aggiunge spaziatura interna.
+----------------------------------------------------------------*/
+.report-download {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Titolo della sezione download */
+.report-download h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Lista dei link di download con flexbox per layout responsive */
+.download-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*---------------------------------------------------------------
+  PULSANTI DI DOWNLOAD
+  Link trasformati in pulsanti eleganti con transizione hover.
+----------------------------------------------------------------*/
+.download-button {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+/* Effetto hover sul pulsante */
+.download-button:hover {
+  background-color: #333333;
+}
+
+/*---------------------------------------------------------------
+  FOOTER
+  Sezione finale semplice e centrata.
+----------------------------------------------------------------*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  font-size: 0.9em;
+  border-top: 1px solid #dddddd;
+}
+
+/*---------------------------------------------------------------
+  RESPONSIVE DESIGN
+  Adattamenti per schermi piccoli (massimo 600px).
+----------------------------------------------------------------*/
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .download-button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
