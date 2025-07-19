@@ -14,36 +14,52 @@
   Font serif per un tocco elegante, sfondo chiaro e testo scuro.
 ----------------------------------------------------------------*/
 body {
-  font-family: Georgia, serif;
-  background-color: #ffffff;
-  color: #333333;
+  font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: #f8f5f0; /* Un beige/crema chiaro ispirato a Caudalie */
+  color: #000000;
   line-height: 1.6;
 }
 
 /*---------------------------------------------------------------
-  HERO HEADER
-  Sezione introduttiva con immagine di sfondo scura e testo bianco.
+  HEADER PRINCIPALE
+  Sottile, sfondo viola scuro con testo bianco centrato.
 ----------------------------------------------------------------*/
-.hero {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('images/caudalie-hero.jpg') center/cover no-repeat;
-  padding: 80px 20px;
-  text-align: center;
+.main-header {
+  background-color: #321d4b; /* Viola scuro */
   color: #ffffff;
+  padding: 4px 10px; /* Sottile */
+  text-align: center;
 }
 
-/* Titolo principale nella hero */
-.hero h1 {
-  font-size: 2.8em;
+.main-header h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+/*---------------------------------------------------------------
+  SEZIONE HERO VIGNETO
+  Immagine di sfondo a larghezza piena, testo centrato.
+----------------------------------------------------------------*/
+.hero-vineyard {
+  background: 
+    url('img/vigneto.jpg') center/cover no-repeat; /* Assumi 'vineyard.jpg' nella cartella 'images' */
+  height: 60vh; /* Altezza per visualizzare bene l'immagine */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff; /* Testo bianco sull'immagine scura */
+}
+
+.hero-content p {
+  font-size: 1.4em;
   margin-bottom: 10px;
 }
 
-/* Sottotitolo nella hero */
-.hero p {
-  font-size: 1.2em;
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 /*---------------------------------------------------------------
@@ -57,10 +73,13 @@ body {
 }
 
 /* Titolo della sezione download */
-.report-download h2 {
+.report-download h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: 300;
+  letter-spacing: 0.9;
+  color: #321d4b; 
 }
 
 /* Lista dei link di download con flexbox per layout responsive */
@@ -78,18 +97,19 @@ body {
 ----------------------------------------------------------------*/
 .download-button {
   display: inline-block;
-  background-color: #000000;
+  background-color: #1a4f3b; /* Verde scuro ispirato a Caudalie */
   color: #ffffff;
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 4px;
   font-size: 1em;
   transition: background-color 0.3s ease;
+  white-space: nowrap; /* Evita che il testo vada a capo sul pulsante */
 }
 
 /* Effetto hover sul pulsante */
 .download-button:hover {
-  background-color: #333333;
+  background-color: #32705e; /* Un verde leggermente più chiaro per l'hover */
 }
 
 /*---------------------------------------------------------------
@@ -99,9 +119,9 @@ body {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #f7f7f7;
+  background-color: #e6e0d9; /* Un colore di sfondo per il footer più chiaro, in linea con il brand */
   font-size: 0.9em;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #d1c7bc; /* Bordo più morbido */
 }
 
 /*---------------------------------------------------------------
@@ -109,12 +129,24 @@ footer {
   Adattamenti per schermi piccoli (massimo 600px).
 ----------------------------------------------------------------*/
 @media (max-width: 600px) {
-  .hero {
-    padding: 60px 10px;
+  .main-header {
+    padding: 10px 10px;
   }
 
-  .hero h1 {
-    font-size: 2em;
+  .main-header h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-vineyard {
+    height: 40vh; /* Riduci l'altezza della hero su schermi piccoli */
+  }
+
+  .hero-content p {
+    font-size: 1.1em;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8em;
   }
 
   .download-button {
