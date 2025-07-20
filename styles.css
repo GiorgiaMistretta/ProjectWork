@@ -57,6 +57,16 @@ body {
   margin-bottom: 10px;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: 550;
+  letter-spacing: 1.2;
+  color: #091a13;
+}
+
+
 .hero-content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -77,7 +87,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2.5em;
-  font-weight: 300;
+  font-weight: 550;
   letter-spacing: 0.9;
   color: #321d4b; 
 }
@@ -90,6 +100,7 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
 
 /*---------------------------------------------------------------
   PULSANTI DI DOWNLOAD
@@ -111,6 +122,16 @@ body {
 .download-button:hover {
   background-color: #32705e; /* Un verde leggermente più chiaro per l'hover */
 }
+
+.video-container video {
+  max-width: 100%; /* Rende il video responsivo */
+  height: auto;    /* Mantiene le proporzioni */
+  display: block;  /* Per centrare con margin auto */
+  margin: 20px auto; /* Centra orizzontalmente con un margine superiore/inferiore */
+  border: 1px solid #ccc; /* Aggiunge un bordo */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
+}
+
 
 /*---------------------------------------------------------------
   FOOTER
@@ -146,6 +167,10 @@ footer {
   }
 
   .hero-content h2 {
+    font-size: 1.8em;
+  }
+
+  h2 {
     font-size: 1.8em;
   }
 
