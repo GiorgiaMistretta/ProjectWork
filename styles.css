@@ -19,7 +19,7 @@ body {
 .header {
   background-color: #321d4b; 
   color: #ffffff;
-  padding: 4px 10px; 
+  line-height: 40px;
   text-align: center;
   font-size: 0.9em;
 }
@@ -343,7 +343,6 @@ footer p {
 
     .header {
         font-size: 0.8em; /* Ridotto la dimensione del font nell'header */
-        padding: 6px 10px; /* Aumenta leggermente il padding per maggiore leggibilità */
     }
 
     .slider-vigneto {
@@ -454,7 +453,6 @@ footer p {
 
     .header {
         font-size: 0.75em;
-        padding: 8px 5px;
     }
 
     .slider-vigneto {
