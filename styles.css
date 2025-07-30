@@ -1,81 +1,45 @@
-/*---------------------------------------------------------------
-  RESET DI BASE
-  Annulla margini e padding di default e imposta box-sizing
-  uniforme in tutti i browser.
-----------------------------------------------------------------*/
+/* Annulla margini e padding di default e imposta box-sizing
+  uniforme in tutti i browser. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*---------------------------------------------------------------
-  STILI GENERALI
-  Font serif per un tocco elegante, sfondo chiaro e testo scuro.
-----------------------------------------------------------------*/
+/* Font */
 body {
-  font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  background-color: #f8f5f0; /* Un beige/crema chiaro ispirato a Caudalie */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  background-color: #f8f5f0; 
   color: #000000;
   line-height: 1.6;
 }
 
-/*---------------------------------------------------------------
-  HEADER PRINCIPALE
-  Sottile, sfondo viola scuro con testo bianco centrato.
-----------------------------------------------------------------*/
-.main-header {
-  background-color: #321d4b; /* Viola scuro */
+/* HEADER
+  Sottile, sfondo viola scuro con testo bianco centrato. */
+.header {
+  background-color: #321d4b; 
   color: #ffffff;
-  padding: 4px 10px; /* Sottile */
+  padding: 4px 10px; 
   text-align: center;
+  font-size: 0.9em;
 }
 
-.main-header h1 {
-  font-size: 1.8em;
-  margin: 0;
-}
-
-/*---------------------------------------------------------------
-  SEZIONE HERO VIGNETO
-  Immagine di sfondo a larghezza piena, testo centrato.
-----------------------------------------------------------------*/
-.hero-vineyard {
+/* SLIDER VIGNETO
+  Immagine di sfondo a larghezza piena, testo centrato. */
+.slider-vigneto {
   background: 
-    url('img/vigneto.jpg') center/cover no-repeat; /* Assumi 'vineyard.jpg' nella cartella 'images' */
+    url('img/vigneto.jpg') center/cover no-repeat;
   height: 60vh; /* Altezza per visualizzare bene l'immagine */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #ffffff; /* Testo bianco sull'immagine scura */
+  color: #ffffff; 
 }
 
-.hero-content p {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.4em;
-  font-weight: 550;
-  letter-spacing: 1.2;
-  color: #091a13;
-}
-
-
-.hero-content h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-/*---------------------------------------------------------------
-  SEZIONE DOWNLOAD
-  Centra il contenuto e aggiunge spaziatura interna.
-----------------------------------------------------------------*/
+/* DOWNLOAD
+  Centra il contenuto e aggiunge spaziatura interna. */
 .report-download {
   max-width: 800px;
   margin: 40px auto;
@@ -86,14 +50,13 @@ h2 {
 .report-download h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2.5em;
-  font-weight: 550;
-  letter-spacing: 0.9;
+  font-size: 2em;
+  font-weight: 400;
   color: #321d4b; 
 }
 
-/* Lista dei link di download con flexbox per layout responsive */
-.download-list {
+/*Link di download con flexbox per layout responsive */
+.download-button-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -101,14 +64,11 @@ h2 {
   gap: 20px;
 }
 
-
-/*---------------------------------------------------------------
-  PULSANTI DI DOWNLOAD
-  Link trasformati in pulsanti eleganti con transizione hover.
-----------------------------------------------------------------*/
+/* PULSANTI DI DOWNLOAD
+  Link trasformati in pulsanti con transizione hover. */
 .download-button {
   display: inline-block;
-  background-color: #1a4f3b; /* Verde scuro ispirato a Caudalie */
+  background-color: #1a4f3b; 
   color: #ffffff;
   text-decoration: none;
   padding: 12px 24px;
@@ -120,7 +80,15 @@ h2 {
 
 /* Effetto hover sul pulsante */
 .download-button:hover {
-  background-color: #32705e; /* Un verde leggermente più chiaro per l'hover */
+  background-color: #32705e; 
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #123124;
 }
 
 .video-container video {
@@ -132,50 +100,459 @@ h2 {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
 }
 
-
-/*---------------------------------------------------------------
-  FOOTER
-  Sezione finale semplice e centrata.
-----------------------------------------------------------------*/
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #e6e0d9; /* Un colore di sfondo per il footer più chiaro, in linea con il brand */
-  font-size: 0.9em;
-  border-top: 1px solid #d1c7bc; /* Bordo più morbido */
+article {
+    width: 90%; /* Larghezza generale dell'articolo */
+    max-width: 1200px; /* Larghezza massima per articoli più grandi */
+    margin: 20px auto; /* Centra l'articolo nella pagina */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/*---------------------------------------------------------------
-  RESPONSIVE DESIGN
-  Adattamenti per schermi piccoli (massimo 600px).
-----------------------------------------------------------------*/
-@media (max-width: 600px) {
-  .main-header {
-    padding: 10px 10px;
-  }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Rimuove lo spazio extra sotto l'immagine */
+}
 
-  .main-header h1 {
-    font-size: 1.5em;
-  }
+p {
+    margin-bottom: 1em;
+}
 
-  .hero-vineyard {
-    height: 40vh; /* Riduci l'altezza della hero su schermi piccoli */
-  }
+/* Sezione Uva, immagine centrale con titolo e paragrafo sotto --- */
+.Uva {
+    display: flex;
+    flex-direction: column; /* Colonna per impilare immagine, titolo e testo */
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 40px;
+}
 
-  .hero-content p {
-    font-size: 1.1em;
-  }
+.Uva .image-container,
+.Uva .text-container {
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    max-width: 800px; /* Larghezza massima per l'immagine e il testo */
+    text-align: justify;
+}
 
-  .hero-content h2 {
-    font-size: 1.8em;
-  }
+.Uva img {
+    margin: 0 auto 20px auto; /* Centra l'immagine e aggiunge spazio sotto */
+}
 
-  h2 {
-    font-size: 1.8em;
-  }
+.uvah3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Spazio sopra il titolo */
+}
 
-  .download-button {
-    padding: 10px 20px;
+/* Sezione NO-List, immagine a sinistra, paragrafo a destra con titolo sopra entrambi */
+.no-listh3 {
+    text-align: center; /* Il titolo rimane centrato sopra la sezione */
+    margin-top: 40px;
+    color: #d00707; 
+}
+
+.NO-List {
+    display: flex;
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo su schermi piccoli */
+    align-items: flex-start; /* Allinea gli elementi in alto */
+    margin-bottom: 40px;
+    gap: 40px; /* Spazio tra immagine e testo */
+}
+
+.NO-List .image-container2 {
+    flex: 1; /* Permette all'immagine di occupare lo spazio disponibile */
+    min-width: 300px; /* Larghezza minima per l'immagine */
+    max-width: 45%; /* Larghezza massima dell'immagine in percentuale */
+    order: 1; /* Ordine di visualizzazione */
+}
+
+.NO-List .text-container2 {
+    flex: 2; /* Permette al testo di occupare più spazio */
+    min-width: 350px; /* Larghezza minima per il testo */
+    max-width: 50%; /* Limita la larghezza del testo */
+    order: 2; /* Ordine di visualizzazione */
+    text-align: justify;
+}
+
+/* Sezione Eco-Packaging, immagine a destra, paragrafo a sinistra con titolo sopra entrambi */
+.Eco-Packagingh3 {
+    text-align: center; /* Il titolo rimane centrato sopra la sezione */
+    margin-top: 40px;
+    color: #210138; 
+}
+
+.Eco-Packaging {
+    display: flex;
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo su schermi piccoli */
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 20px; /* Spazio tra immagine e testo */
+}
+
+.Eco-Packaging .image-container3 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    order: 2; /* L'immagine a destra */
+}
+
+.Eco-Packaging .text-container3 {
+    flex: 2;
+    min-width: 350px;
+    max-width: 50%;
+    order: 1; /* Il testo a sinistra */
+    text-align: justify;
+}
+
+/* Sezione Ambiente, immagini una sotto l'altra a sinistra, paragrafo a destra con titolo sopra */
+.Ambienteh3 {
+    text-align: center; /* Il titolo rimane centrato sopra la sezione */
+    margin-top: 40px;
+    color: #0a3b0a; 
+}
+
+.Ambiente .intro-ambiente,
+.Ambiente .altri-impegni-ambiente {
+    width: 100%; /* blocchi di testo che occupano tutta la larghezza */
+    margin-bottom: 20px; 
+}
+
+.ambiente-grid-container {
+    display: grid; /* Usiamo Grid anziché Flexbox */
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr)); /* Crea colonne flessibili */
+    gap: 60px; /* Spazio TRA le colonne e le righe */
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1400px; 
+    justify-content: center; /* Centra la griglia se non occupa tutta la larghezza massima */
+    margin-left: auto; /* Centra il contenitore Grid */
+    margin-right: auto; /* Centra il contenitore Grid */
+    box-sizing: border-box;
+    padding: 0 20px; /* Piccolo padding laterale per dare respiro ai bordi */
+}
+
+/* classi item d'appoggio per singoli paragrafi e immagini */
+.ambiente-item {
+    display: flex; /* Flexbox per affiancare immagine e paragrafo */
+    align-items: flex-start;
+    gap: 35px; /* Aumentato spazio tra l'immagine e il suo rispettivo paragrafo */
+    /* Qui non utilizzo width e min-width, sarà Grid a gestirli */
+    box-sizing: border-box;
+    border: 1px solid #eee; /* Un piccolo bordo per dare consistenza al blocco */
+    padding: 20px; /* Spazio interno al blocco */
+    border-radius: 8px; /* Bordo arrotondato */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Leggera ombreggiatura */
+}
+
+/* Stili per le immagini all'interno di ambiente-item */
+.ambiente-item img {
+    width: 450px; 
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Stili per il paragrafo all'interno di ambiente-item */
+.ambiente-item p {
+    flex-grow: 1; /* Il paragrafo occuperà tutto lo spazio rimanente */
+    text-align: left;
+    font-size: 1.1em; 
+    line-height: 1.7;
+    margin: 0;
+    padding-top: 8px; 
+}
+
+/* Sezione Team, immagine a destra, paragrafo a sinistra con titolo sopra entrambi */
+.Teamh3 {
+    text-align: center; 
+    margin-top: 40px;
+    color: #05095e; 
+}
+
+.Team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.Team .image-container5 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    order: 2; /* immagine a destra */
+}
+
+.Team .text-container5 {
+    flex: 2;
+    min-width: 350px;
+    max-width: 50%;
+    order: 1; /* testo a sinistra */
+    text-align: justify;
+}
+
+footer {
+    background-color: #f0f0f0; 
+    color: #555; 
+    text-align: center;
+    padding: 20px; 
+    margin-top: 50px; 
     font-size: 0.9em;
-  }
+}
+
+footer p {
+    margin: 5px 0; /* Spazio tra i paragrafi del footer */
+}
+
+/* Media Queries per rendere reattiva la pagina web sui diversi schermi e risoluzioni */
+
+/* Breakpoint per schermi desktop medi e tablet grandi (1400px o meno) */
+@media (max-width: 1400px) {
+    /* per la sezione Ambiente */
+    .ambiente-grid-container {
+        grid-template-columns: 1fr; /* Una singola colonna per gli item della griglia */
+        gap: 50px; /* Spazio tra gli item impilati */
+    }
+
+    .ambiente-item {
+        max-width: 900px; /* Larghezza massima per l'item impilato */
+        width: 90%; /* Occupa quasi tutta la larghezza dello schermo */
+        flex-direction: row; /* Mantiene immagine e testo affiancati all'interno dell'item */
+        align-items: flex-start;
+        gap: 40px; /* Spazio tra immagine e testo all'interno dell'item */
+    }
+
+    .ambiente-item img {
+        width: 300px; /* Ridotta la larghezza dell'immagine per schermi medi */
+    }
+
+    .ambiente-item p {
+        font-size: 1.15em; /* Adattamento del font */
+        line-height: 1.6;
+    }
+}
+
+
+/* Adatta il breakpoint di 768px a 900px per migliore layout Ambiente */
+@media (max-width: 900px) {
+    body {
+        font-size: 0.95em; /* Ridotto leggermente la dimensione base del font */
+    }
+
+    .header {
+        font-size: 0.8em; /* Ridotto la dimensione del font nell'header */
+        padding: 6px 10px; /* Aumenta leggermente il padding per maggiore leggibilità */
+    }
+
+    .slider-vigneto {
+        height: 45vh; /* Ridotto l'altezza dello slider su schermi più piccoli */
+    }
+
+    .report-download {
+        margin: 30px auto; /* Ridotto il margine superiore/inferiore */
+        padding: 0 15px; /* Ridotto il padding laterale */
+    }
+
+    .report-download h1 {
+        font-size: 1.8em; /* Ridotto la dimensione del titolo di download */
+        margin-bottom: 15px;
+    }
+
+    .download-button-list {
+        gap: 15px; /* Ridotto lo spazio tra i pulsanti */
+    }
+
+    .download-button {
+        padding: 10px 20px; /* Ridotto il padding dei pulsanti */
+        font-size: 0.9em; /* Ridotto la dimensione del font dei pulsanti */
+    }
+
+    h2 { /* h2 generico */
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .video-container video {
+        margin: 15px auto; /* Ridotto il margine del video */
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8em;
+    }
+
+    .NO-List,
+    .Eco-Packaging,
+    .Team {
+        flex-direction: column; /* Su schermi più piccoli, impila tutti gli elementi verticalmente */
+        align-items: center; /* Centra gli elementi */
+        gap: 40px; /* Aggiungi un gap consistente quando impilati */
+    }
+
+    .NO-List .image-container2,
+    .NO-List .text-container2,
+    .Eco-Packaging .image-container3,
+    .Eco-Packaging .text-container3,
+    .Team .image-container5,
+    .Team .text-container5 {
+        max-width: 100%; /* Occupano tutta la larghezza disponibile */
+        order: unset; /* Resetta l'ordine per il layout a colonna */
+        min-width: unset; /* Rimuove il min-width */
+        text-align: center; /* Centra il testo quando impilato */
+    }
+
+    .ambiente-item {
+        flex-direction: column; /* Immagine e testo si impilano all'interno dell'item */
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        padding: 15px; /* Ridotto il padding se necessario per schermi più piccoli */
+    }
+
+    .ambiente-item img {
+        width: 100%; /* L'immagine occupa la larghezza completa dell'item */
+        max-width: 450px; /* Limite massimo per l'immagine */
+    }
+
+    .ambiente-item p {
+        font-size: 1em; /* Adattamento del font per schermi più piccoli */
+        line-height: 1.5;
+        padding-top: 0; /* Rimosso il padding-top quando impilato */
+    }
+
+    .Uva {
+        padding: 30px 20px; /* Ridotto il padding interno della sezione Uva */
+        gap: 25px; /* Ridotto lo spazio tra gli elementi interni */
+        max-width: 100%; /* Intera larghezza su tablet */
+    }
+
+    .Uva h3 {
+        font-size: 1.8em; /* Aumentato il titolo della sezione Uva per visibilità su mobile */
+        text-align: center;
+    }
+
+    .Uva .image-container {
+        width: 85vw; /* Fa in modo che l'immagine occupi più larghezza su schermi medi */
+        max-width: none;
+    }
+
+    .Uva .text-container p {
+        font-size: 1em;
+        line-height: 1.6;
+        text-align: left; /* Mantenuto left, justify solo su schermi larghi */
+    }
+}
+
+
+/* Schermi piccoli */
+@media (max-width: 600px) { /* Adattato a 600px per gestire meglio la transizione */
+    body {
+        font-size: 0.9em; /* Ulteriore riduzione della dimensione base del font */
+    }
+
+    .header {
+        font-size: 0.75em;
+        padding: 8px 5px;
+    }
+
+    .slider-vigneto {
+        height: 35vh; /* Ridotto ulteriormente l'altezza dello slider */
+    }
+
+    .report-download {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .report-download h1 {
+        font-size: 1.5em; /* Ridotto la dimensione del titolo di download */
+    }
+
+    .download-button-list {
+        flex-direction: column; /* Pulsanti di download impilati verticalmente in caso aggiunga ulteriori anni */
+        align-items: center; /* Pulsanti centrati */
+        gap: 10px;
+    }
+
+    .download-button {
+        width: 90%; /* Pulsanti che occupano quasi tutta la larghezza */
+        text-align: center; /* Centrato il testo all'interno del pulsante */
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    h2 { 
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    .video-container video {
+        margin: 10px auto;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.65em;
+    }
+
+    /* Modifiche per la sezione Ambiente all'interno di questo breakpoint */
+    .ambiente-item img {
+        width: 95%; /* Leggermente meno del 100% per un piccolo margine */
+        max-width: 350px; /* Ulteriore limite massimo */
+    }
+
+    .ambiente-item p {
+        font-size: 0.9em; 
+    }
+
+    /* Stili specifici per la sezione Uva su 600px */
+    .Uva {
+        padding: 20px 15px; /* Ridotto ulteriormente il padding */
+        gap: 20px; /* Ridotto ulteriormente il gap */
+    }
+
+    .Uva h3 {
+        font-size: 1.5em; /* Ridotto la dimensione del titolo della sezione Uva */
+    }
+
+    .Uva .image-container {
+        width: 95vw; /* Fatto in modo che l'immagine riempia quasi tutta la larghezza dello schermo */
+    }
+
+    .Uva .text-container p {
+        font-size: 0.9em; /* Ridotto la dimensione del testo del paragrafo */
+        line-height: 1.5; /* Ulteriore riduzione dell'interlinea */
+    }
+
+    /* Stili specifici per la sezione NO-List, Eco-Packaging, Team su 600px */
+    .NO-List .image-container2,
+    .Eco-Packaging .image-container3,
+    .Team .image-container5 {
+        width: 90%; /* L'immagine occupa quasi tutta la larghezza su smartphone */
+        max-width: 300px; /* Impostato un max-width per le immagini in queste sezioni */
+    }
+    .NO-List .text-container2 p,
+    .Eco-Packaging .text-container3 p,
+    .Team .text-container5 p {
+        font-size: 0.9em; /* Ulteriore riduzione della dimensione del testo */
+        line-height: 1.5;
+    }
+}
+
+/* Breakpoint per schermi molto piccoli */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.85em;
+    }
+    .header {
+        font-size: 0.7em;
+    }
+    .ambiente-item img {
+        max-width: 250px; /* Riduzione per smartphone molto piccoli */
+    }
+    .ambiente-item p {
+        font-size: 0.85em;
+    }
 }
