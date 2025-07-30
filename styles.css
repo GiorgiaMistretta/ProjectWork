@@ -478,7 +478,8 @@ footer p {
 
     .download-button {
         width: 90%; /* Pulsanti che occupano quasi tutta la larghezza */
-        text-align: center; /* Centrato il testo all'interno del pulsante */
+        display: flex;
+        justify-content: center; /* display flex e justify-content center per centrare correttamente testo bottone */
         padding: 10px;
         font-size: 0.9em;
     }
