@@ -440,7 +440,6 @@ footer p {
     .Uva .text-container p {
         font-size: 1em;
         line-height: 1.6;
-        text-align: left; /* Mantenuto left, justify solo su schermi larghi */
     }
 }
 
