@@ -376,9 +376,7 @@ footer p {
     h2 { /* h2 generico */
         font-size: 1.2em;
         margin-bottom: 15px;
-    }
-
-    
+    } 
 
     .video-container video {
         margin: 15px auto; /* Ridotto il margine del video */
@@ -418,7 +416,7 @@ footer p {
     }
 
     .text-container3 {
-        margin-top: -20px;
+        margin-top: -40px;
     }
 
     .ambiente-item {
