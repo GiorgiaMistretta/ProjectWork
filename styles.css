@@ -396,7 +396,7 @@ footer p {
     }
 
     .Eco-Packagingh3 {
-    margin-bottom: 0px;
+    margin-bottom: -40px;
 }
 
     .NO-List .image-container2,
@@ -408,7 +408,6 @@ footer p {
         max-width: 100%; /* Occupano tutta la larghezza disponibile */
         order: unset; /* Resetta l'ordine per il layout a colonna */
         min-width: unset; /* Rimuove il min-width */
-        text-align: center; /* Centra il testo quando impilato */
     }
 
     .ambiente-item {
