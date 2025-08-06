@@ -427,10 +427,10 @@ footer p {
         max-width: 100%; /* Intera larghezza su tablet */
     }
 
-    .Uva h3 {
-        font-size: 1.8em; /* Aumentato il titolo della sezione Uva per visibilità su mobile */
+/*    .Uva h3 {
+        font-size: 1.8em; 
         text-align: center;
-    }
+    } */
 
     .Uva .image-container {
         width: 85vw; /* Fa in modo che l'immagine occupi più larghezza su schermi medi */
@@ -512,9 +512,9 @@ footer p {
         gap: 20px; /* Ridotto ulteriormente il gap */
     }
 
-    .Uva h3 {
-        font-size: 1.5em; /* Ridotto la dimensione del titolo della sezione Uva */
-    }
+/*    .Uva h3 {
+        font-size: 1.5em; 
+    } */
 
     .Uva .image-container {
         width: 95vw; /* Fatto in modo che l'immagine riempia quasi tutta la larghezza dello schermo */
