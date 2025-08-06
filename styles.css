@@ -378,6 +378,8 @@ footer p {
         margin-bottom: 15px;
     }
 
+    
+
     .video-container video {
         margin: 15px auto; /* Ridotto il margine del video */
     }
@@ -385,6 +387,11 @@ footer p {
     footer {
         padding: 15px;
         font-size: 0.8em;
+    }
+
+    .uvah3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
     }
 
     .NO-List,
@@ -395,10 +402,6 @@ footer p {
         gap: 40px; /* Aggiungi un gap consistente quando impilati */
     }
 
-    .Eco-Packagingh3 {
-    margin-bottom: -40px;
-}
-
     .NO-List .image-container2,
     .NO-List .text-container2,
     .Eco-Packaging .image-container3,
@@ -408,6 +411,14 @@ footer p {
         max-width: 100%; /* Occupano tutta la larghezza disponibile */
         order: unset; /* Resetta l'ordine per il layout a colonna */
         min-width: unset; /* Rimuove il min-width */
+    }
+
+    .Eco-Packagingh3 {
+    margin-bottom: -20px;
+    }
+
+    .text-container3 {
+        margin-top: -20px;
     }
 
     .ambiente-item {
