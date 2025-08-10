@@ -339,6 +339,10 @@ footer p {
         line-height: 1.6;
         text-align: justify;
     }
+
+    .altri-impegni-ambiente p {
+      text-align: justify;
+    }
 }
 
 
@@ -395,6 +399,23 @@ footer p {
     color: #896e8b
     }
 
+     .Uva {
+        padding: 30px 20px; /* Ridotto il padding interno della sezione Uva */
+        gap: 25px; /* Ridotto lo spazio tra gli elementi interni */
+        max-width: 100%; /* Intera larghezza su tablet */
+    }
+
+    .Uva .image-container {
+        width: 85vw; /* Fa in modo che l'immagine occupi più larghezza su schermi medi */
+        max-width: none;
+    }
+
+    .Uva .text-container p {
+        font-size: 1em;
+        line-height: 1.6;
+        text-align: justify; 
+    }
+
     .NO-List,
     .Eco-Packaging,
     .Team {
@@ -442,21 +463,8 @@ footer p {
         text-align: justify;
     }
 
-    .Uva {
-        padding: 30px 20px; /* Ridotto il padding interno della sezione Uva */
-        gap: 25px; /* Ridotto lo spazio tra gli elementi interni */
-        max-width: 100%; /* Intera larghezza su tablet */
-    }
-
-    .Uva .image-container {
-        width: 85vw; /* Fa in modo che l'immagine occupi più larghezza su schermi medi */
-        max-width: none;
-    }
-
-    .Uva .text-container p {
-        font-size: 1em;
-        line-height: 1.6;
-        text-align: justify; 
+    .altri-impegni-ambiente p {
+      text-align: justify;
     }
 }
 
@@ -512,18 +520,6 @@ footer p {
         font-size: 0.65em;
     }
 
-    /* Modifiche per la sezione Ambiente all'interno di questo breakpoint */
-    .ambiente-item img {
-        width: 95%; /* Leggermente meno del 100% per un piccolo margine */
-        max-width: 350px; /* Ulteriore limite massimo */
-    }
-
-    .ambiente-item p {
-        font-size: 0.9em;
-        text-align: justify; 
-    }
-
-    /* Stili specifici per la sezione Uva su 600px */
     .Uva {
         padding: 20px 15px; /* Ridotto ulteriormente il padding */
         gap: 20px; /* Ridotto ulteriormente il gap */
@@ -537,6 +533,21 @@ footer p {
         font-size: 0.9em; 
         line-height: 1.5;
         text-align: justify; 
+    }
+
+    /* Modifiche per la sezione Ambiente all'interno di questo breakpoint */
+    .ambiente-item img {
+        width: 95%; /* Leggermente meno del 100% per un piccolo margine */
+        max-width: 350px; /* Ulteriore limite massimo */
+    }
+
+    .ambiente-item p {
+        font-size: 0.9em;
+        text-align: justify; 
+    }
+    
+    .altri-impegni-ambiente p {
+      text-align: justify;
     }
 
     /* Stili specifici per la sezione NO-List, Eco-Packaging, Team su 300px */
@@ -569,5 +580,9 @@ footer p {
     .ambiente-item p {
         font-size: 0.85em;
         text-align: justify;
+    }
+
+    .altri-impegni-ambiente p {
+      text-align: justify;
     }
 }
