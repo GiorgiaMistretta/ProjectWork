@@ -143,6 +143,7 @@ p {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
+     color: #896e8b
 }
 
 /* Sezione NO-List, immagine a sinistra, paragrafo a destra con titolo sopra entrambi */
@@ -260,7 +261,7 @@ p {
 /* Stili per il paragrafo all'interno di ambiente-item */
 .ambiente-item p {
     flex-grow: 1; /* Il paragrafo occuperà tutto lo spazio rimanente */
-    text-align: left;
+    text-align: justify;
     font-size: 1.1em; 
     line-height: 1.7;
     margin: 0;
@@ -336,6 +337,7 @@ footer p {
     .ambiente-item p {
         font-size: 1.15em; /* Adattamento del font */
         line-height: 1.6;
+        text-align: justify;
     }
 }
 
@@ -379,7 +381,7 @@ footer p {
     } 
 
     .video-container video {
-        margin: 15px auto; /* Ridotto il margine del video */
+        margin: 20px auto; /* Adattato il margine del video */
     }
 
     footer {
@@ -390,6 +392,7 @@ footer p {
     .uvah3 {
     margin-top: 0px;
     margin-bottom: 0px;
+    color: #896e8b
     }
 
     .NO-List,
@@ -436,6 +439,7 @@ footer p {
         font-size: 1em; /* Adattamento del font per schermi più piccoli */
         line-height: 1.5;
         padding-top: 0; /* Rimosso il padding-top quando impilato */
+        text-align: justify;
     }
 
     .Uva {
@@ -443,11 +447,6 @@ footer p {
         gap: 25px; /* Ridotto lo spazio tra gli elementi interni */
         max-width: 100%; /* Intera larghezza su tablet */
     }
-
-/*    .Uva h3 {
-        font-size: 1.8em; 
-        text-align: center;
-    } */
 
     .Uva .image-container {
         width: 85vw; /* Fa in modo che l'immagine occupi più larghezza su schermi medi */
@@ -457,6 +456,7 @@ footer p {
     .Uva .text-container p {
         font-size: 1em;
         line-height: 1.6;
+        text-align: justify; 
     }
 }
 
@@ -519,7 +519,8 @@ footer p {
     }
 
     .ambiente-item p {
-        font-size: 0.9em; 
+        font-size: 0.9em;
+        text-align: justify; 
     }
 
     /* Stili specifici per la sezione Uva su 600px */
@@ -528,20 +529,17 @@ footer p {
         gap: 20px; /* Ridotto ulteriormente il gap */
     }
 
-/*    .Uva h3 {
-        font-size: 1.5em; 
-    } */
-
     .Uva .image-container {
         width: 95vw; /* Fatto in modo che l'immagine riempia quasi tutta la larghezza dello schermo */
     }
 
     .Uva .text-container p {
-        font-size: 0.9em; /* Ridotto la dimensione del testo del paragrafo */
-        line-height: 1.5; /* Ulteriore riduzione dell'interlinea */
+        font-size: 0.9em; 
+        line-height: 1.5;
+        text-align: justify; 
     }
 
-    /* Stili specifici per la sezione NO-List, Eco-Packaging, Team su 600px */
+    /* Stili specifici per la sezione NO-List, Eco-Packaging, Team su 300px */
     .NO-List .image-container2,
     .Eco-Packaging .image-container3,
     .Team .image-container5 {
@@ -553,6 +551,7 @@ footer p {
     .Team .text-container5 p {
         font-size: 0.9em; /* Ulteriore riduzione della dimensione del testo */
         line-height: 1.5;
+        text-align: justify;
     }
 }
 
@@ -569,5 +568,6 @@ footer p {
     }
     .ambiente-item p {
         font-size: 0.85em;
+        text-align: justify;
     }
 }
